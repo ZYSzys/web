@@ -1,0 +1,18 @@
+@import url(https://fonts.googleapis.com/css?family=Crafty+Girls);
+
+h1 {
+	font-family: 'Crafty Girls';
+	text-align: center;
+}
+
+img {
+	position: absolute;
+	width: 200px;
+	margin-top: 230px;
+	cursor: pointer;
+}
+
+img.flip {
+	-webkit-transform: scaleX(-1);
+	transform: scaleX(-1);
+}
