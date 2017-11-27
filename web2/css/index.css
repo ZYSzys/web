@@ -1,0 +1,184 @@
+html, body
+{
+	margin: 0;
+	padding: 0;
+	height: 100%;
+}
+
+body
+{
+	background: 50% 50% no-repeat #FC3;
+	font-family: Georgia, Times, serifs;
+}
+
+.floater
+{
+	position: relative;
+	float: left;
+	height: 50%;
+	margin-bottom: -200px;
+	width: 1px;
+}
+
+.centered
+{
+	position: relative;
+	clear: left;
+	height: 400px;
+	width: 80%;
+	max-width: 800px;
+	min-width: 400px;
+	margin: 0 auto;
+	background: #fff;
+	border: 4px solid #666;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	border-radius: 8px;
+}
+
+.bottom
+{
+	position: absolute;
+	bottom: 0;
+	right: 50%;
+}
+
+.logo
+{
+	position: absolute;
+	left: 0;
+	top: 0;
+	right: 70%;
+}
+
+.nav
+{
+	position: absolute;
+	left: 0;
+	top: 25%;
+	bottom: 0;
+	right: 70%;
+	padding: 20px;
+	margin: 10px;
+}
+
+.content
+{
+	position: absolute;
+	left: 30%;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	overflow: auto;
+	height: 340px;
+	padding: 20px;
+	margin: 10px;
+}
+
+.nav ul
+{
+	list-style: none;
+	padding: 0;
+	margin: 20px 0 0 0;
+	text-indent: 0;
+}
+
+.nav li
+{
+	padding: 0;
+	margin: 3px;
+}
+
+.nav li a
+{
+	display: block;
+	background-color: #e8e8e8;
+	padding: 7px;
+	margin: 0;
+	text-decoration: none;
+	color: #000;
+	border-bottom: 1px solid #bbb;
+	text-align: right; 
+}
+
+.nav li a::after
+{
+	content: '》';
+	color: #aaa;
+	font-weight: bold;
+	display: inline;
+	float: right;
+	margin: 0 2px 0 5px;
+}
+
+.nav li a:hover, .nav li a:focus
+{
+	background: #f8f8f8;
+	border-bottom-color: #777;
+}
+
+.nav li a:hover::after
+{
+	margin: 0 0 0 7px;
+	color: #f93;
+}
+
+.nav li a:active
+{
+	padding: 8px 7px 6px 7px;
+}
+
+h1, h2
+{
+	font-family: sans-serif;
+	font-weight: normal;
+	color: #666;
+}
+
+h1
+{
+	color: #f93;
+	border-bottom: 1px solid #ddd;
+	letter-spacing: -0.05em;
+	font-weight: bold;
+	margin-top: 0;
+	padding-top: 0; 
+}
+
+.bottom
+{
+	padding: 10px;
+	font-size: 0.7em;
+	color: #f03;
+}
+
+.logo
+{
+	font-size: 2em;
+	text-align: center;
+	color: #999;
+}
+
+.logo strong
+{
+	font-weight: normal;
+}
+
+.logo span
+{
+	display: block;
+	font-size: 4em;
+	line-height: 0.7em;
+	color: #666;
+}
+
+p, h2
+{  
+    line-height: 1.6em;  
+}  
+  
+a 
+{  
+    color: #f03;  
+}  
+

@@ -1,0 +1,29 @@
+body {
+	margin: 0;
+	padding: 0;
+}
+
+.number-container {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	overflow: hidden;
+	text-align: center;
+	font-size: 1.6em;
+}
+
+#numberWang {
+	position: relative;
+	margin: auto;
+	width: 100%;
+	text-align: center;
+	font-size: 5.6em;
+}
+
+.animatecss {
+	position: fixed;
+	bottom: 0%;
+	left: 2%;
+	font-size: 1.4em;
+}
+

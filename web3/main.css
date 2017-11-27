@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+body
+{
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  min-height: 100vh;
+  width: 100vw;
+  background: #94adb9;
+  color: #ecdad9;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+  font-family: 'Overpass', sans-serif;
+}
+
+#insert {
+  text-transform: lowercase;
+  font-size: 12vh;
+  user-select: none;
+}
+
+#lightMeUp {
+  text-transform: lowercase;
+  font-family: "Playfair Display", sans-serif;
+  text-decoration: none;
+  background: ;
+}
+
+svg {
+  padding-top: 25px;
+  height: 12vh;
+  width: 12vw;
+}
+
