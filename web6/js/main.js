@@ -31,6 +31,8 @@ $(document).ready(function() {
 });
 
 $(document).keydown(function(event) {
+
+
 	event.preventDefault();
 	switch (event.keyCode) {
 		case 37:
@@ -72,6 +74,7 @@ function newGame() {
 function init() {
 	// body...
 	score = 0;
+
 	for(var i = 0; i < 4; i++) {
 		for(var j = 0; j < 4; j++) {
 			var gridCell = $('#grid-cell-'+i+"-"+j);
@@ -169,6 +172,7 @@ function isGameOver() {
 		alert("Done~~");
 		return true;
 	}
+    return false;
 }
 
 function moveLeft() {
