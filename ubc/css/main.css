@@ -1,6 +1,15 @@
 * {box-sizing:border-box}
 body {font-family: Verdana,sans-serif;}
-.mySlides {display: block;}
+
+img {
+  box-shadow: 5px 5px 5px gray;
+}
+
+.mySlides {
+  display: block;
+}
+
+
 /* 幻灯片容器 */
 .slideshow-container {
   max-width: 1000px;

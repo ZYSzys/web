@@ -8,12 +8,18 @@ function showSlides() {
 		slides[i].style.display = "none"; 
 	}
 	slideIndex++;
-	if (slideIndex> slides.length) {
+	if (slideIndex > slides.length) {
 		slideIndex = 1;
-	} 
+	}
+	slides[slideIndex-1].style.width = "400%";
 	slides[slideIndex-1].style.display = "block"; 
-	slides[slideIndex-1].style.width = "400%"; 
 
-	console.log("Done");
+	console.log(slides.index);
     setTimeout(showSlides, 2000); // Change image every 2 seconds
 };
+
+function start(argument) {
+	// body...
+	slideIndex = argument;
+	showSlides();
+}
