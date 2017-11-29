@@ -7,6 +7,7 @@ function showSlides() {
 	for (var i = 0; i < slides.length; i++) {
 		slides[i].style.display = "none"; 
 	}
+	//document.getElementByTagName('hr').style.display = "none";
 	slideIndex++;
 	if (slideIndex > slides.length) {
 		slideIndex = 1;
@@ -16,10 +17,11 @@ function showSlides() {
 
 	console.log(slides.index);
     setTimeout(showSlides, 2000); // Change image every 2 seconds
-};
+}
 
 function start(argument) {
 	// body...
 	slideIndex = argument;
 	showSlides();
 }
+
