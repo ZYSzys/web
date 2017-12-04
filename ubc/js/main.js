@@ -1,13 +1,27 @@
 var slideIndex = 0;
-//showSlides();
+var slides = document.getElementsByClassName("mySlides");
 
-function showSlides() {
-	//unShowButton();
-	var slides = document.getElementsByClassName("mySlides");
+function reset() {
+	var header = document.getElementsByClassName("jumbotron");
+	header[0].style.display = "none";
+
 	for (var i = 0; i < slides.length; i++) {
 		slides[i].style.display = "none"; 
 	}
-	//document.getElementByTagName('hr').style.display = "none";
+
+	buttonShow();
+}
+
+function buttonShow() {
+	var bt = document.getElementsByTagName("button");
+	for(var i = 0; i < bt.length; i++)
+	{
+		bt[i].style.display = "block";
+	}
+}
+
+function showSlides() {
+	reset();
 	slideIndex++;
 	if (slideIndex > slides.length) {
 		slideIndex = 1;
@@ -15,13 +29,13 @@ function showSlides() {
 	slides[slideIndex-1].style.width = "400%";
 	slides[slideIndex-1].style.display = "block"; 
 
-	console.log(slides.index);
-    setTimeout(showSlides, 2000); // Change image every 2 seconds
+	//console.log(slides.index);
+    setTimeout(showSlides, 2000); 
 }
 
-function start(argument) {
-	// body...
-	slideIndex = argument;
-	showSlides();
+function showOne(index) {
+	reset();
+	slides[index].style.width = "400%";
+	slides[index].style.display = "block"; 
 }
 

@@ -4,78 +4,70 @@
 	<title>Show</title>
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-
 </head>
 <body>
+	<button class="prev">prev</button>
+	<button class="next">next</button>
 	<div class="container">
 		<div class="jumbotron" style="text-align:center">
 			<span class="text-primary" style="font-size: 300%;"><strong>Photograph</strong></span><br>
-			<button class="btn btn-success" onclick="start(0)">Click</button>
+			<button class="btn btn-success" onclick="showSlides()">Click</button>
 		</div>
 		<div class="slideshow-container">
 			<hr>
 			<div class="row">
 				<div class="mySlides">
-					<div class="numbertext">1 / 8</div>
 					<div class="col-xs-3">
-						<img src="images/image1.jpg" style="width:100%" onclick="start(0)">
+						<img src="images/image1.jpg" style="width:100%" onclick="showOne(0)">
 					</div>
 					
 				</div>
 
 				<div class="mySlides">
-					<div class="numbertext">2 / 8</div>
 					<div class="col-xs-3">
-						<img src="images/image2.jpg" style="width:100%" onclick="start(1)">
+						<img src="images/image2.jpg" style="width:100%" onclick="showOne(1)">
 					</div>
 				</div>
 
 				<div class="mySlides">
-					<div class="numbertext">3 / 8</div>
 					<div class="col-xs-3">
-						<img src="images/image3.jpg" style="width:100%" onclick="start(2)">
+						<img src="images/image3.jpg" style="width:100%" onclick="showOne(2)">
 					</div>
 				</div>
 
 				<div class="mySlides">
-					<div class="numbertext">4 / 8</div>
 					<div class="col-xs-3">
-						<img src="images/image4.jpg" style="width:100%" onclick="start(3)">
+						<img src="images/image4.jpg" style="width:100%" onclick="showOne(3)">
 					</div>
 				</div>
 			</div>
 			<br>
 			<div class="row">
 				<div class="mySlides">
-					<div class="numbertext">5 / 8</div>
 					<div class="col-xs-3">
-						<img src="images/image5.jpg" style="width:100%" onclick="start(4)">
+						<img src="images/image5.jpg" style="width:100%" onclick="showOne(4)">
 					</div>
 				</div>
 
 				<div class="mySlides">
-					<div class="numbertext">6 / 8</div>
 					<div class="col-xs-3">
-						<img src="images/image6.jpg" style="width:100%" onclick="start(5)">
+						<img src="images/image6.jpg" style="width:100%" onclick="showOne(5)">
 					</div>
 				</div>
 
 				<div class="mySlides">
-					<div class="numbertext">7 / 8</div>
 					<div class="col-xs-3">
-						<img src="images/image7.jpg" style="width:100%" onclick="start(6)">
+						<img src="images/image7.jpg" style="width:100%" onclick="showOne(6)">
 					</div>
 				</div>
 
 				<div class="mySlides">
-					<div class="numbertext">8 / 8</div>
 					<div class="col-xs-3">
-						<img src="images/image8.jpg" style="width:100%" onclick="start(7)">
+						<img src="images/image8.jpg" style="width:100%" onclick="showOne(7)">
 					</div>
 				</div>
 			</div>
 		</div>
-
 	</div>
 	<script type="text/javascript" src="js/main.js"></script>
 	<script type="text/javascript" src="js/jquery.min.js"></script>
