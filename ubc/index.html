@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta charset="utf-8">
 	<title>Show</title>
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 </head>
 <body>
-	<button class="prev">prev</button>
-	<button class="next">next</button>
+	<button class="prev" onclick="prev()">prev</button>
+	<button class="next" onclick="next()">next</button>
+	<button class="clr" onclick="clr()">❌</button>
 	<div class="container">
-		<div class="jumbotron" style="text-align:center">
+		<div class="jumbotron">
 			<span class="text-primary" style="font-size: 300%;"><strong>Photograph</strong></span><br>
 			<button class="btn btn-success" onclick="showSlides()">Click</button>
 		</div>
@@ -41,7 +43,7 @@
 					</div>
 				</div>
 			</div>
-			<br>
+			<hr>
 			<div class="row">
 				<div class="mySlides">
 					<div class="col-xs-3">

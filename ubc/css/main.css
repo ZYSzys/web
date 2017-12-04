@@ -19,7 +19,7 @@ img {
   margin: auto;
 }
 
-.prev, .next {
+.prev, .next, .clr {
   cursor: pointer;
   position: absolute;
   top: 50%;
@@ -39,6 +39,15 @@ img {
   border-radius: 3px 0 0 3px;
 }
 
-.prev:hover, .next:hover {
+.clr {
+  top: 0;
+  right: 0;
+}
+
+.prev:hover, .next:hover, .clr:hover {
   background-color: rgba(0,0,0,0.8);
+}
+
+img:hover {
+  border: 10px solid yellow;
 }
