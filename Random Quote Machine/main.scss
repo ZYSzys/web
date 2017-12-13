@@ -1,0 +1,54 @@
+/*@import url(http://fonts.googleapis.com/css?family=Raleway:400,500);*/
+
+* {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	vertical-align: baseline;
+}
+
+div {
+	position: relative;
+	z-index: 2;
+}
+
+body {
+	background-color: #333;
+	color: #333;
+	font-family: "Raleway", sans-serif;
+	font-weight: 400;
+}
+
+.footer {
+	width: 450px;
+	text-align: center;
+	display: block;
+	margin: 15px auto 30px auto;
+	font-size: 0.8em;
+	color: #fff
+	a {
+		font-weight: 500;
+		text-decoration: none;
+		color: #fff
+	}
+}
+
+.quote-box {
+	border-radius: 3px;
+	position: relative;
+	margin: 8% auto auto auto;
+	width: 450px;
+	padding: 40px 50px;
+	display: table;
+	background-color: #fff;
+	.quote-text {
+		i {
+			font-size: 1em;
+			margin-right: 0.4em;
+		}
+
+		text-align: center;
+		width: 450px;
+		height: auto;
+	}
+}
