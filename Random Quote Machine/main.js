@@ -1,0 +1,6 @@
+function inIframe() {
+	try {
+		
+	}
+	// body...
+}
