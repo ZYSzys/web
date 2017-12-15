@@ -3,20 +3,17 @@
   margin: 0;
   padding: 0;
   list-style: none;
-  vertical-align: baseline;
-}
+  vertical-align: baseline; }
 
 div {
   position: relative;
-  z-index: 2;
-}
+  z-index: 2; }
 
 body {
   background-color: #333;
   color: #333;
   font-family: 'Raleway', sans-serif;
-  font-weight: 400;
-}
+  font-weight: 400; }
 
 .footer {
   width: 450px;
@@ -24,13 +21,11 @@ body {
   display: block;
   margin: 15px auto 30px auto;
   font-size: 0.8em;
-  color: #fff;
-}
+  color: #fff; }
 .footer a {
   font-weight: 500;
   text-decoration: none;
-  color: #fff;
-}
+  color: #fff; }
 
 .quote-box {
   border-radius: 3px;
@@ -39,33 +34,28 @@ body {
   width: 450px;
   padding: 40px 50px;
   display: table;
-  background-color: #fff;
-}
+  background-color: #fff; }
 .quote-box .quote-text {
   text-align: center;
   width: 450px;
   height: auto;
   clear: both;
   font-weight: 500;
-  font-size: 1.75em;
-}
+  font-size: 1.75em; }
 .quote-box .quote-text i {
   font-size: 1.0em;
-  margin-right: 0.4em;
-}
+  margin-right: 0.4em; }
 .quote-box .quote-author {
   width: 450px;
   height: auto;
   clear: both;
   padding-top: 20px;
   font-size: 1em;
-  text-align: right;
-}
+  text-align: right; }
 .quote-box .buttons {
   width: 450px;
   margin: auto;
-  display: block;
-}
+  display: block; }
 .quote-box .buttons .button {
   height: 38px;
   border: none;
@@ -77,11 +67,9 @@ body {
   padding: 8px 18px 6px 18px;
   margin-top: 30px;
   opacity: 1;
-  cursor: pointer;
-}
+  cursor: pointer; }
 .quote-box .buttons .button:hover {
-  opacity: 0.9;
-}
+  opacity: 0.9; }
 .quote-box .buttons .button#tweet-quote, .quote-box .buttons .button#tumblr-quote {
   float: left;
   padding: 0px;
@@ -90,10 +78,8 @@ body {
   font-size: 1.2em;
   margin-right: 5px;
   height: 30px;
-  width: 40px;
-}
+  width: 40px; }
 .quote-box .buttons .button#new-quote {
-  float: right;
-}
+  float: right; }
 
 /*# sourceMappingURL=main.css.map */
