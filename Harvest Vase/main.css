@@ -1,0 +1,124 @@
+*
+{
+	margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+	background: linear-gradient(to right, rgba(255,184,154,0.8) 0%, rgba(245,218,202,0.8) 100%);
+
+}
+
+.wrapper
+{
+	margin: 0 auto;
+	max-width: 654px;
+	height: 100vh;
+}
+
+.flower_box
+{
+	width: 654px;
+	height: 420px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%,-50%);
+	transform: translate(-50%,-50%);
+	background: rgba(255,255,255,1);
+	border-radius: 8px;
+	text-align: center;
+	box-shadow: 0px 17px 10px -10px rgba(0,0,0,0.2); 
+
+}
+
+.image
+{
+	float: left;
+	width: 50%;
+	height: 100%;
+	display: block;
+	background-color: yellow;
+	background: url("https://avatars1.githubusercontent.com/u/23313266?s=460&amp;v=4");
+	background-size: cover;
+	border-radius: 8px 0 0 8px; 
+}
+
+.text
+{
+	padding: 55px 40px;
+	width: 50%;
+	height: 100%;
+	float: left;
+}
+
+h1
+{
+	color: rgba(71,71,71,1);
+	font: normal 300 34px/30px 'Playfair Display', serif;
+	text-align: left;
+}
+
+h5
+{
+	text-transform: uppercase;
+	font: normal 300 13px/30px 'Raleway', sans-serif;
+	color: rgba(71,71,71,0.3);
+	text-align: left;
+	letter-spacing: 3px;
+	margin-top: 4px;
+}
+
+hr
+{
+	display: block;
+	color: rgba(71,71,71,0.1);
+	height: 2px;
+	margin-top: 20px;
+}
+
+p
+{
+	text-align: left;
+	color: rgba(71,71,71,0.35);
+	font: normal 300 15px/26px 'Playfair Display', serif;
+	margin-top: 20px;
+}
+
+span
+{
+	margin-top: 30px;
+	float: left;
+	font: normal 300 34px/26px 'Playfair Display', serif;
+	color: rgba(71,71,71,1);
+}
+
+button
+{
+	float: right;
+	margin-top: 20px;
+	width: 175px;
+	height: 50px;
+	border-radius: 40px;
+	outline: 0;
+	border: 0;
+	background-color: rgba(125,231,202,1);
+	color: rgba(255,255,255,1);
+	font: normal 300 13px/30px 'Raleway', sans-serif;
+	letter-spacing: 3px;
+	text-transform: uppercase; 
+
+}
+
+button:hover
+{
+	cursor: pointer;
+	background-color: rgba(92,200,170,1);
+	transition: background-color 0.5s ease-out;
+}
+
+
+
+
