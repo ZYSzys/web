@@ -3,36 +3,36 @@
 <head>
 	<title>ZYSzys's Web Projects</title>
 	<link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="index.css">
+	<style type="text/css">
+	* {
+		text-align: center;
+	}
+
+	.jumbotron {
+		margin: 4em 10em 4em 10em;
+		border-radius: 10%;
+		background-color: #E6E6FA;
+		color: lightseagreen;
+	}
+
+	.list {
+		text-align: center;
+	}
+
+	div a {
+		padding: auto;
+		text-align: center;
+		font-family: sans-serif;
+		font-size: 2em;
+		display: inline-flex;
+		padding-top: 2%;
+	}
+
+</style>
 </head>
 <body>
 	<div class="jumbotron">
-		<div class="list">
-			<li>
-				<a href="https://zyszys.github.io/web/resume/">ZYSzys' Resume</a>
-			</li>
-			<li>	
-				<a href="https://zyszys.github.io/web/staticweb/">A Simple Static Web</a>
-			</li>
-			<li>
-				<a href="https://zyszys.github.io/web/harvest_vase/">Harvest Vase</a>
-			</li>
-			<li>
-				<a href="https://zyszys.github.io/web/yourock/">You Rock</a>
-			</li>
-			<li>
-				<a href="https://zyszys.github.io/web/the_walking_man/">The Walking Man</a>
-			</li>
-			<li>
-				<a href="https://zyszys.github.io/web/random_quote_machine/">Random Quote Machine</a>
-			</li>
-			<li>
-				<a href="https://zyszys.github.io/web/universe/">Time Universe</a>
-			</li>
-			<li>
-				<a href="https://zyszys.github.io/web/firework/">Firework</a>
-			</li>
-		</div>
+		<div class="list"></div>
 	</div>
 	<footer>
 		Theme by <a href="https://github.com/ZYSzys/web/">ZYSzys</a> 
@@ -40,6 +40,17 @@
 	<script src="https://cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>
 	<script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<script type="text/javascript" color="0,0,255" opacity='0.7' zIndex="-2" count="99" src="https://cdn.bootcss.com/canvas-nest.js/1.0.1/canvas-nest.min.js"></script>
+	<script type="text/javascript">
+		var lists = ['resume','staticweb','harvest_vase','yourock','the_walking_man','random_quote_machine','universe','firework','particle'];
+		var place = document.getElementsByClassName('list');
+		for(var i = 0; i < lists.length; i++) {
+			var str = '<a href="https://zyszys.github.io/web/'+ lists[i] +'/">' + lists[i]+ '</a>';
+			var li = document.createElement('li');
+			li.innerHTML = str;
+			console.log(str);
+			place[0].appendChild(li.cloneNode(true));
+		}
+	</script>
 </body>
 
 </html>
