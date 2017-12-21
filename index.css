@@ -1,0 +1,19 @@
+.jumbotron {
+	margin: 4em 10em 4em 10em;
+	border-radius: 10%;
+	background-color: #E6E6FA;
+	color: lightseagreen;
+}
+
+.list {
+	text-align: center;
+}
+
+a {
+	padding: auto;
+	text-align: center;
+	font-family: sans-serif;
+	font-size: 2em;
+	display: block;
+	padding-top: 1em;
+}
