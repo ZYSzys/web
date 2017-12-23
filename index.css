@@ -1,3 +1,7 @@
+* {
+	text-align: center;
+}
+
 .jumbotron {
 	margin: 4em 10em 4em 10em;
 	border-radius: 10%;
@@ -9,11 +13,11 @@
 	text-align: center;
 }
 
-a {
+div a {
 	padding: auto;
 	text-align: center;
 	font-family: sans-serif;
 	font-size: 2em;
-	display: block;
-	padding-top: 1em;
+	display: inline-flex;
+	padding-top: 2%;
 }
