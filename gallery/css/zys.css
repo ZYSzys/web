@@ -1,0 +1,66 @@
+@charset "utf-8";
+/* CSS Document */
+/*zhengwen*/
+.clr 
+{
+	clear:both;
+	padding:0;
+	margin:0;
+	width:100%;
+	font-size:0px;
+	line-height:0px;
+}
+.mainBody
+{
+	margin:0 auto;
+	padding:0 0;
+	text-align: center;
+	max-width: 1000px;
+	background-color: rgba(192, 192, 192, 0.7);
+	height: auto;
+}
+.mainBody h1
+{
+	color: lightseagreen;
+	font-family: "San Francisco", Georgia, Serif;
+	font-size: 3em;
+}
+.mainBody table 
+{
+	padding-bottom: 20px;
+}
+.mainBody table tr td
+{
+	height: 170px;
+	width: 240px;
+}
+.mainBody table tr td img 
+{
+	text-align: center;
+	margin:0 auto;
+	border:5px solid #d8dbdc;
+	width:180px;
+	height:125px;
+	cursor: pointer;
+}
+.mainBody table tr td img:hover 
+{
+	border:5px solid yellow;
+	box-shadow: 5px 5px 3px #888888;
+	width:200px;
+	height:137px;
+	cursor: pointer;
+	border-radius: 20px;
+}
+.mainBody  button 
+{
+	border:5px solid black;
+	width: 20em;
+	height: 5em;
+	float: left;
+	margin-left: 6em;
+	margin-bottom: 1em;
+}
+
+
+
