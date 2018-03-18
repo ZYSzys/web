@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Vue</title>
+</head>
+
+<body>
+    <div id="app">
+        {{th}}
+    </div>
+    <div id="app-2">
+        <span v-bind:title="message">
+            Stay!
+        </span>
+    </div>
+    <div id="app-3">
+        <p v-if="seen">Now you can see me.</p>
+    </div>
+    <div id="app-4">
+        <ol>
+            <li v-for="todo in todos" style="color: green;">
+                {{todo.text}}
+            </li>
+        </ol>
+    </div>
+    <div id="app-5">
+        <p>{{message}}</p>
+        <button v-on:click="reverseMessage">Click</button>
+    </div>
+    <div id="app-6">
+        <p>{{message}}</p>
+        <input v-model="message">
+    </div>
+    <div id="app-7">
+        <ol>
+            <todo-item v-for="item in groceryList" v-bind:todo="item" v-bind:key="item.id"></todo-item>
+        </ol>
+    </div>
+    <div id="example">
+        <p>Original: {{message}}</p>
+        <p>After: {{reverseMessage}}</p>
+        <p>{{res}}</p>
+    </div>
+    <div id="watch-example">
+        <p>
+            Ask a question:
+            <input v-model="question">
+        </p>
+        <p>{{answer}}</p>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios@0.12.0/dist/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lodash@4.13.1/lodash.min.js"></script>
+    <script type="text/javascript">
+    const app = new Vue({
+        el: "#app",
+        data: {
+            th: "ZYSzys"
+        }
+    })
+    var app2 = new Vue({
+        el: "#app-2",
+        data: {
+            message: "Now is " + new Date().toLocaleString()
+        }
+    })
+    var app3 = new Vue({
+        el: "#app-3",
+        data: {
+            seen: true
+        }
+    })
+    var app4 = new Vue({
+        el: "#app-4",
+        data: {
+            todos: [
+                { text: "Learn js" },
+                { text: "learn vue" },
+                { text: "complete the project" }
+            ]
+        }
+    })
+    var app5 = new Vue({
+        el: "#app-5",
+        data: {
+            message: "Hello, Vue"
+        },
+        methods: {
+            reverseMessage: function() {
+                this.message = this.message.split('').reverse().join('')
+            }
+        }
+    })
+    var app6 = new Vue({
+        el: "#app-6",
+        data: {
+            message: "app6"
+        }
+    })
+    Vue.component('todo-item', {
+        props: ['todo'],
+        template: '<li>{{todo.text}}</li>'
+    })
+    var app7 = new Vue({
+        el: "#app-7",
+        data: {
+            groceryList: [
+                { id: 1, text: 'water' },
+                { id: 4, text: 'milk' },
+                { id: 66, text: 'coffee' }
+            ]
+        }
+    })
+    var vm = new Vue({
+        el: "#example",
+        data: {
+            message: "ZYSzys",
+            res: 'e'
+        },
+        computed: {
+            reverseMessage: function() {
+                return this.message.split('').reverse().join('')
+            }
+        },
+        watch: {
+            message: function(v) {
+                this.res = this.message + ' is the best!'
+            }
+        }
+    })
+    var watchExample = new Vue({
+        el: "#watch-example",
+        data: {
+            question: '',
+            answer: 'No answer'
+        },
+        watch: {
+            question: function(newQuestion, oldQuestion) {
+                this.answer = "Waiting!"
+                this.getAnswer()
+            }
+        },
+        methods: {
+            getAnswer: _.debounce(
+                function() {
+                    if (this.question.indexOf('?') === -1) {
+                        this.answer = "Should have a q mark!"
+                        return
+                    }
+                    this.answer = 'Thinking...'
+                    var vm = this
+                    axios.get('https://yesno.wtf/api')
+                        .then(function(response) {
+                            vm.answer = _.capitalize(response.data.answer)
+                        })
+                        .catch(function(error) {
+                            vm.answer = "Error!"
+                        })
+                },
+                500
+            )
+        }
+    })
+    </script>
+</body>
+
+</html>
