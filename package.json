@@ -1,0 +1,22 @@
+{
+  "name": "zys-web",
+  "version": "1.0.0",
+  "description": "The collection of ZYSzys's simple web projects and some fantastic projects from other people",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ZYSzys/web.git"
+  },
+  "keywords": [
+    "web"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ZYSzys/web/issues"
+  },
+  "homepage": "https://github.com/ZYSzys/web#readme"
+}
