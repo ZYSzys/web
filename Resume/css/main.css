@@ -66,6 +66,7 @@ p {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     margin-bottom: -10000px;
+    color: #01579B;
 }
 
 .main,
@@ -99,7 +100,6 @@ h2 {
 
 .side-info dt {
     font-size: 18px;
-    color: #fff;
     line-height: 40px;
 }
 
